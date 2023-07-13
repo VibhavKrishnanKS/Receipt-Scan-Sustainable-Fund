@@ -1,0 +1,68 @@
+body{
+  background:linear-gradient(to right,#5A3F37,#2C7744);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  background-image:url('E:\finalattempt\uploadfile\src\components\front.jpg');
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  color:#ddd;
+  align-items: center;
+}
+
+table {
+   font-family: Arial, Helvetica, sans-serif;
+   border-collapse: collapse  ;
+   width:50%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ h1{
+  text-align: center;
+ }
+ 
+td, th,tr {
+   border: 1px solid #ddd;
+   padding: 8px;
+ }
+td{
+   background-color:#031c03;
+   color:white;
+}
+ 
+ tr:nth-child(even){background-color: #700e0eb7;}
+ 
+ tr:hover {background-color: #ff03033b;}
+ 
+th {
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: center;
+   background-color: black;
+   color: white;
+ }
+
+ .pie{
+  padding:'20px';
+  width:'50%';
+ }
+
+ .result{
+
+  position: center;
+  font-weight: bold;
+  font-family: 'opArt';
+  text-shadow: 0px 5px 5px black;
+  font-size:30 px;
+  color:#fff;
+ }
+
+ h3{
+  text-align: center;
+ }

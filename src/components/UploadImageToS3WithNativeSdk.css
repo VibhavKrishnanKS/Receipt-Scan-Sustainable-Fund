@@ -1,0 +1,72 @@
+#input[type="file"] {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#styleme {
+  background-color: #000088;
+  color: white;
+  position: fixed;
+  bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+#styleme:hover {
+  background-color: #000099;
+  color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#image-preview {
+  max-width: 100%;
+  position: relative;
+  float: right;
+}
+
+#image-preview img {
+  width: 100%;
+}
+
+#image-preview:hover {
+  cursor: pointer;
+}
+
+#image-preview:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#image-preview:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+#image-preview img::before {
+  content: attr(alt);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+}
